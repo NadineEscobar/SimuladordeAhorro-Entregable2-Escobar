@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <title>Simulador de Ahorro</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <h1>Simulador de Ahorro</h1>
     <p>Este simulador te ayudara a calcular en cuantos meses alcazaras tus objetivos de ahorro, también podras consultar tu historial.</p>
     
-    <button id="iniciarBtn">Iniciar simulación</button>
-    <button id="verHistorialBtn">Ver historial</button>
+    <form id="simuladorForm">
+        <label>💰Ahorro actual: <input type="number" id="ahorroActual" min="0" required></label><br>
+        <label>💵Ahorro inicial: <input type="number" id="ahorroInicial" min="0" required></label><br>
+        <label>🎯Objetivo de ahorro: <input type="number" id="objetivo" min="1" required></label><br>
+        <label>📆Aporte mensual: <input type="number" id="aporteMensual" min="1" required></label><br>
+        <button type="submit">Calcular</button>
+    </form>
 
 
+    <section id="resultado"></section>
+    <button id="verHistorialBtn">📎Ver historial</button>
+    <section id="historial"></section>
 
-
-    <script defer src="./main.js"></script>
+    <script defer src="./js/main.js"></script>
 </body>
 </html>
