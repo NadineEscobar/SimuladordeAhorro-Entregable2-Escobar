@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Ahorro</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     <h1>Simulador de Ahorro</h1>
@@ -20,7 +23,11 @@
 
 
     <section id="resultado"></section>
-    <button id="verHistorialBtn">📎Ver historial</button>
+    <div class="botones-extra">
+        <button id="verHistorialBtn">📎 Ver historial completo</button>
+        <button id="filtrarBtn">🔍 Ver solo simulaciones > 6 meses</button>
+        <button id="borrarHistorialBtn">🗑️ Borrar historial</button>
+    </div>
     <section id="historial"></section>
 
     <script defer src="./js/main.js"></script>
